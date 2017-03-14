@@ -1,0 +1,16 @@
+{
+  "name": "vegas-night-syntax",
+  "theme": "syntax",
+  "version": "1.7.1",
+  "description": "A dark syntax theme with vibrant colors",
+  "keywords": [
+    "dark",
+    "vibrant",
+    "syntax"
+  ],
+  "repository": "https://gitlab.com/robertpeteuil/vegas-night-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
