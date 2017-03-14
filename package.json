@@ -8,7 +8,7 @@
     "vibrant",
     "syntax"
   ],
-  "repository": "https://gitlab.com/robertpeteuil/vegas-night-syntax",
+  "repository": "https://github.com/robertpeteuil/vegas-night-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
