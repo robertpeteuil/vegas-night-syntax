@@ -1,21 +1,34 @@
 .syntax--source.syntax--json {
+
+  .syntax--punctuation.syntax--definition {
+      color: @hue-2;
+      font-weight: bold;
+  }
+  .syntax--constant {
+    color: @hue-4;
+  }
+
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json {
+    .syntax--punctuation.syntax--separator.syntax--dictionary.syntax--key-value.syntax--json {
+          color: @hue-1;
+    }
+  }
+
   .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
-    & > .syntax--string.syntax--quoted.syntax--json {
-      & > .syntax--punctuation.syntax--string {
-        color: @hue-5;
+    .syntax--string.syntax--quoted.syntax--json {
+                                    color: @hue-3;
+      .syntax--punctuation.syntax--string {
+                              color: @hue-2;
       }
-      color: @hue-5;
     }
   }
 
   .syntax--meta.syntax--structure.syntax--dictionary.syntax--json, .syntax--meta.syntax--structure.syntax--array.syntax--json {
-    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
-    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
-      color: @hue-4;
-    }
-
-    & > .syntax--constant.syntax--language.syntax--json {
-      color: @hue-1;
-    }
+      > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+                      color: @hue-4;
+        .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json.syntax--punctuation {
+                      color: @hue-2;
+          }
+      }
   }
 }
